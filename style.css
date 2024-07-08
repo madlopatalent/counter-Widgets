@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    background-color: white;
+    display: inline-flexbox;
+    /* flex-wrap: wrap; */
+}
+.widget {
+    flex: 50%; /* Each widget takes 50% width */
+    margin: 10px;   /* Adjust margin as needed */
+}
+@media (max-width: 600px) {
+    .widget {
+        flex-basis: 100%; /* Each widget takes full width on smaller screens */
+    }
+}
+.body {
+background-image: url(imageb.png);
+background-repeat: no-repeat;
+ /* Full height */
+ height: 100%; 
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}

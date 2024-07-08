@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>widgets</title>
+</head>
+
+<body class="body">
+  <div class="heading">
+    <h1>Welcome to my Alpine Introduction</h1>
+  </div>
+  <div class="Alpine">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <div class="widget" x-data="{title: 'Let`s Count'}">
+      <h3 x-text="title"></h3>
+      <button @click="title= 'Welcome, to my Counter widgets'">click me</button>
+    </div>
+  </div>
+  <ul class="a">
+    <li class="tutorial"><a href="alphinetutorial.html">External alpine tutorial</a></li>
+  </ul>
+  <ul>
+    <li class="crement"><a href="incrementDecrement.html">Increment and Decrement Counter</a></li>
+  </ul>
+  <ul>
+    <li class="counter"><a href="counter.html">Counter using JavaScript and Alpine</a></li>
+  </ul>
+</body>
+
+</html>
+<style>
+  .body {
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    height: 1000%;
+    background-size: cover;
+  }
+
+  .heading {
+    background-color: pink;
+    text-align: center;
+  }
+
+  .Alpine {
+    background-color: deeppink;
+
+  }
+
+  .tutorial {
+    background-color: darkgray;
+    border-radius: 25px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .crement {
+    background-color: darkgray;
+    border-radius: 25px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .counter {
+    background-color: darkgrey;
+    border-radius: 25px;
+    height: 50px;
+    text-align: center;
+  }
+</style>
